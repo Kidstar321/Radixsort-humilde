@@ -8,7 +8,7 @@
 //
 //This is in ascending order btw
 //You can ignore the aux functions if you want, but if you want to use them they are self explanatory I believe
-void inverter(int i,int string[]) //aux function that reverses an array
+static void inverter(int i,int string[]) //aux function that reverses an array
 {
     int aux[i];
 
@@ -18,7 +18,7 @@ void inverter(int i,int string[]) //aux function that reverses an array
         string[a]=aux[i-1-a];
     
 }
-int valorcasa(int n,int k) //aux funtction that guives you the k numerical digit (base 10) of a number n
+static int valorcasa(int n,int k) //aux funtction that guives you the k numerical digit (base 10) of a number n
 {
     int b=1;
     for(int a=0;a<k;a++)
@@ -27,7 +27,7 @@ int valorcasa(int n,int k) //aux funtction that guives you the k numerical digit
     return n;
 
 }
-void sortncasas(int i,int vetor[]) //the good shit
+static void sortncasas(int i,int vetor[]) //the good shit
 {
     int posição[10][i],contador[10]={0,0,0,0,0,0,0,0,0,0},negativo=0,vetorneg[i],auxneg=0,maxcasas=0,auxtmn=1,b=0,maxvalor=0;
 
